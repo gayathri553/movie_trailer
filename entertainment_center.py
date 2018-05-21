@@ -1,5 +1,12 @@
 import media
 import fresh_tomatoes
+"""
+declare favorite movies, with 4 args each:
+title (movie's title)
+poster_image_url (url to poster image)
+trailer_youtube_url (url to youtube trailer)
+"""
+
 print("Content-type:text/html \n")
 
 TP = media.Movie("Tarezameen Par", "http: // www.bollylocations.com /
@@ -14,6 +21,7 @@ SB = media.Movie("Sathamanam Bhavathi",
 MB = media.Movie("Mayabazar",
                  "http://www.idlebrain.com/images4/wp-27mayabazaarcthumb.jpg",
                  "Q9M6QW0MH6E")
+# assign individual movies to mylist
 mylist = [TP, TI, SB, MB]
+# call movie trailer page method and pass mylist  and sorting option
 fresh_tomatoes.open_movies_page(mylist)
-
