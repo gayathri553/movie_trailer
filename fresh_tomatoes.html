@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Movie Trailers</title>
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+        crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myVideo").on("hidden.bs.modal", function () {
+                $("#myframeY").attr("src", "#");
+            })
+        })
+        function changeVideo(vId) {
+            var iframe = document.getElementById("myframeY");
+            iframe.src = "https://www.youtube.com/embed/" + vId;
+            $("#myVideo").modal("show");
+        }
+    </script>
+    <style>
+        .container {
+            flex-wrap: wrap;
+            display: flex;
+            flex: 10%;
+            justify-content: center;
+            
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            color: lightseagreen;
+            background-color: rgb(35, 72, 142);
+            height: 1.5cm;
+            margin: 0px, 0px, 0px, 0px;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'comic sans ms', cursive;
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+        }
+        .one:hover,
+        .two:hover,
+        .three:hover,
+        .four:hover
+        {
+            background-color: rgb(30, 128, 255);
+            visibility: visible;
+            cursor: pointer;
+            border-radius:5%;
+        }
+
+        .one {
+
+            padding-top: 15px;
+            padding-left: 40px;
+            padding-bottom: 30px;
+            padding-right: 40px;
+            background-color: white;
+        }
+        .two {
+            padding-top: 15px;
+            padding-left: 40px;
+            padding-bottom: 30px;
+            padding-right: 40px;
+            background-color: white;
+        }
+        .three {
+            padding-top: 15px;
+            padding-left: 40px;
+            padding-bottom: 30px;
+            padding-right: 40px;
+            background-color: white;
+        }
+        .four {
+            padding-top: 15px;
+            padding-left: 40px;
+            padding-bottom: 30px;
+            padding-right: 40px;
+            background-color: white;
+        }
+    </style>
+    <title>Movie Trailers</title>
+    <header><i class="fa fa-film"></i>  Movie Trailers  <i class="fa fa-film"></i></header>
+    <main>
+        <div class="container">
+<div class="one" onclick="changeVideo('tn_2Ie_jtX8')">
+                <img  src="http://www.bollylocations.com/clix_images/201701040601560.Taare%20Zameen%20Par.jpg">
+                <figcaption style="text-align: center; color: white;">
+                    <b>Tarezameen Par</b>
+                </figcaption>
+            </div>
+<div class="one" onclick="changeVideo('xvszmNXdM4w')">
+                <img  src="http://st1.bollywoodlife.com/wp-content/uploads/photos/3-idiots-movie-poster-201601-657872.jpg">
+                <figcaption style="text-align: center; color: white;">
+                    <b>Three idiots</b>
+                </figcaption>
+            </div>
+<div class="one" onclick="changeVideo('LG_qGiHqmIY')">
+                <img  src="https://i.ytimg.com/vi/paD2oJXdZEE/maxresdefault.jpg">
+                <figcaption style="text-align: center; color: white;">
+                    <b>Sathamanam Bhavathi</b>
+                </figcaption>
+            </div>
+<div class="one" onclick="changeVideo('Q9M6QW0MH6E')">
+                <img  src="http://www.idlebrain.com/images4/wp-27mayabazaarcthumb.jpg">
+                <figcaption style="text-align: center; color: white;">
+                    <b>Mayabazar</b>
+                </figcaption>
+            </div>
+
+     
+        </div>       
+        <div class="modal fade" id="myVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <iframe id="myframeY" width="550" height="350" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
