@@ -127,9 +127,9 @@ movie_title_content='''<div class="one" onclick="changeVideo('{trailer_youtube_u
                 </figcaption>
             </div>
 '''
-def create_movie(movies):
+def create_movie(mylist):
     content = ''
-    for movie in movies:
+    for movie in mylist:
         content +=movie_title_content.format(
             title=movie.title,
             poster_image_url=movie.poster_image_url,
@@ -137,10 +137,10 @@ def create_movie(movies):
         )
     return content
 
-def  open_movies_page(movies):
+def  open_movies_page(mylist):
     output_file = open('fresh_tomatoes.html','w')
 
-    rendered_content = create_movie(movies)
+    rendered_content = create_movie(mylist)
 
     output_file.write(main_page_start + rendered_content+main_page_remain)
     output_file.close()
