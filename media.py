@@ -2,10 +2,10 @@ import webbrowser
 
  
 class Movie():
-    def __init__(self,movie_title,poster_image,trailer_youtube):
-        self.title = movie_title
-        self.poster_image_url= poster_image
-        self.trailer_youtube_url= trailer_youtube
+    def __init__(ob,movie_title,poster_image,trailer_youtube):
+        ob.title = movie_title
+        ob.poster_image_url= poster_image
+        ob.trailer_youtube_url= trailer_youtube
 
-    def  show_trailer(self):
-        webrowser.open(self.trailer_youtube_url)
+    def  show_trailer(ob):
+        webrowser.open(ob.trailer_youtube_url)
