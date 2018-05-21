@@ -10,15 +10,6 @@ Running the program:
  -python entertainment_center.py
 Download Git bash 
 Project files need to be uploaded in Git 
-Open Git bash 
-   Then run commands in this respository in the path that your project files are present
-   git init(.git folder is created(not a sharable folder))
-   git clone(to upload this file we use the clone link)
-   git status (It gives the present status)
-   git add --all
-   git commit -m "adding files"
-   git push origin master
-We use Python for buliding this project 
 
    
    
