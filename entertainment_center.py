@@ -14,5 +14,5 @@ SB = media.Movie("Sathamanam Bhavathi",
 MB = media.Movie("Mayabazar",
                  "http://www.idlebrain.com/images4/wp-27mayabazaarcthumb.jpg",
                  "Q9M6QW0MH6E")
-movies = [TP,TI,SB,MB]
-fresh_tomatoes.open_movies_page(movies)
+mylist = [TP,TI,SB,MB]
+fresh_tomatoes.open_movies_page(mylist)
